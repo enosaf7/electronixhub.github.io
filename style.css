@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #009574;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #fgh;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 100%;
+    max-width: 430px;
+
+}
+.form{
+    padding: 2rem; 
+}
+.form header{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 16px;
+}
+.form input{
+    outline: none;
+    width: 100%;
+    padding: 1.2rem;
+    margin: 0 0 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+.form input:hover{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+ .form a{
+    color: #009579;
+    text-decoration: none;
+ }
+ .form a:hover{
+    text-decoration: underline;
+ }
+ .form .button{
+    background-color: #009579;
+    color: #fff;
+    font-size: 500;
+    margin: 1.2rem 0;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.form .button:hover{
+    background-color: #006653;
+}
+.form label{
+    color: #009579;
+    cursor: pointer;
+}
+.form label:hover{
+    color: #006653;
+}
+.signup {
+    text-align: center;
+}
+.container .register{
+    display: none;
+}
+#check:checked ~ .register{
+    display: block;
+}
+#check:checked ~ .login{
+    display: none;
+}
+#check{
+    display:  none;
+}
